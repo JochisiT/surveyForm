@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form Practice</title>
+	  <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1 id="title">Delish Cheesecake Cafe Survey Form</h1>
+    <p id="description">Thank you for taking time to help us improve our services!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email: <input type="email" id="email" name="email" placeholder="Enter your email" required /></label>
+        <label id="number-label">Age: <input type="number" id="number" pattern="[0-9]"min="13" max="120" placeholder="Enter your age" required /></label>
+        </fieldset>
+        <fieldset>
+        <label>Would you recommend Delish Cheesecake Cafe to a friend?</label>
+        <label><input type="radio" name="recommend" class="inline" value="definitely" required/> Definitely!</label>
+        <label><input type="radio" name="recommend" class="inline" value="maybe"/> Maybe</label>
+        <label><input type="radio" name="recommend" class="inline" value="never"/> Never!</label>
+        </fieldset>
+        <fieldset>
+        <label>How did you hear about us?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="family-friends" required>Recommended by friends or family</option>
+            <option value="facebook">Delish Cheesecake Cafe Facebook Page</option>
+            <option value="feature">Vlog/Blog Feature</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        </fieldset>
+        <fieldset>
+        <label>What is your favorite cheesecake variant? Check all that apply.</label>
+          <label><input type="checkbox" name="variant" class="inline" value="mango"/> Mango Cheesecake</label>
+          <label><input type="checkbox" name="variant" class="inline" value="blueberry"/> Blueberry Cheesecake</label>
+          <label><input type="checkbox" name="variant" class="inline" value="queso"/> Queso de Bola Cheesecake</label>
+          <label><input type="checkbox" name="variant" class="inline" value="strawberry"/> Strawberry Cheesecake</label>
+          <label><input type="checkbox" name="variant" class="inline" value="oreo"/> Oreo Cheesecake</label>
+          <label><input type="checkbox" name="variant" class="inline" value="choco"/> Dark Chocolate Cheesecake</label>
+          <label><input type="checkbox" name="variant" class="inline" value="coffee"/> Coffee and Caramel Cheesecake</label>
+          <label><input type="checkbox" name="variant" class="inline" value="NY"/> New York Cheesecake</label>
+          <label><input type="checkbox" name="variant" class="inline" value="bailey's"/> Bailey's Cheesecake</label>
+          <label><input type="checkbox" name="variant" class="inline" value="matcha"/> Matcha Cheesecake</label>
+        </fieldset>
+        <fieldset>    
+        <label>What else can we improve on?
+          <textarea id="suggestion" rows="5" cols="40" placeholder="I think you can still improve on..."></textarea>
+			  </label>
+      </fieldset>
+      <button id="submit" type="submit">Submit</button>      
+      </fieldset>
+    </form>
+  </body>
+</html>
